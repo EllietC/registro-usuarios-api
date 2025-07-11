@@ -23,7 +23,24 @@ API REST desarrollada en Spring Boot que permite registrar usuarios con sus dato
 
 - `POST /api/usuarios` - Crea un nuevo usuario
 
-## Respuesta de éxito
+### Body de ejemplo
+
+```json
+{
+  "name": "Juan Rodriguez",
+  "email": "juan@rodriguez.org",
+  "password": "Password12",
+  "phones": [
+    {
+      "number": "123456789",
+      "citycode": "1",
+      "contrycode": "56"
+    }
+  ]
+}
+```
+
+### Respuesta de éxito
 
 ```json
 {
